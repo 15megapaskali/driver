@@ -17,9 +17,11 @@ body{
     width: 100%;
 }
 
-@media screen and (max-width: 539px) {
+
+
+@media screen and (max-width: 770px) {
     .home{
-        max-width: 540px;
+        width: 100%;
     }
 
     ;
@@ -28,17 +30,56 @@ body{
     .head-up{
         background-color: black;
         height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 3%;
+        .logo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 54px;
+            width: 54px;
+            border-radius: 50%;
+            background-color: white;
+            text-transform: uppercase;
+        }
+        .adver-bg{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            width: 170px;
+            height: 48px;
+            background-color: white;
+            img{
+                height: 66px;
+                width: 100px;
+            }
+        }
+        .login{
+            max-width: 130px;
+            max-height: 40px;
+            color:white;
+
+        }
     }
 
     .head-down{
         background-color: grey;
         height: 40px;
-        button{
-
+        .head-buttons{
+            width: 100%;
+            height: 100%;
+            button{
+                text-transform: uppercase;
+                height: 100%;
+                width: calc(100% / 3);
+            }
+            :hover{
+                background-color: darkgrey;
+            }
         }
-        :hover{
-            background-color: darkgrey;
-        }
+        
     }
 
 }
